@@ -40,7 +40,8 @@ export default {
       }
     },
     onCancel() {
-      this.$emit("edit-cancelled");
+      if(this.newLabel){
+      this.$emit("edit-cancelled");}
     },
   },
   mounted() {
